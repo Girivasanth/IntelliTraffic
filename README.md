@@ -119,32 +119,6 @@ smart-traffic-management/
 ├── requirements.txt
 └── README.md
 ```
-
----
-
-## Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/Girivasanth/smart-traffic-management
-cd smart-traffic-management
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install SUMO (if not already installed)
-# https://sumo.dlr.de/docs/Installing/index.html
-
-# Run vehicle detection on a video feed
-python detection/yolo_detector.py --source 0  # 0 = webcam, or path to video
-
-# Train the RL agent in SUMO simulation
-python rl_agent/train.py --config simulation/sumo_configs/city_map.sumocfg
-
-# Run the full edge controller (live mode)
-python edge/controller.py --junction-id J001
-```
-
 ---
 
 ## Requirements
@@ -175,14 +149,6 @@ sqlalchemy
 
 ---
 
-## Author
-
-**Girivasanth V**  
-Artificial Intelligence & Machine Learning Student  
-Chennai, India  
-GitHub: [github.com/Girivasanth](https://github.com/Girivasanth)
-
----
 
 ## License
 
